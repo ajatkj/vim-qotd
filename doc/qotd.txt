@@ -1,0 +1,50 @@
+*qotd.txt*           QUOTE OF THE DAY            Last Change: 2019 Mar 22
+
+              |Quote| |of| |the| |Day| by Ankit Jain
+
+==============================================================================
+0. Contents                                                         
+
+    1. Intro ....................................... |qotd-intro|
+    2. Commands .................................... |qotd-commands|
+    3. Configuration settings ...................... |qotd-config|
+    4. Integration ................................. |qotd-integration|
+
+==============================================================================
+1. Intro                                            *qotd-intro* *qotd*
+
+This is a simple plugin which gives you a new funny quote everytime you run
+the command :QOTD
+Requires helper.vim
+
+Note: Requires Vim 7.2+
+
+==============================================================================
+2. Commands                                                *qotd-commands*
+
+                                                                *:QOTD*
+:QOTD                   Get a new quote everytime you run this command.
+                        Quotes are stored in a list `g:qotd#quotes#allquotes`
+                            
+==============================================================================
+3. Configuration                                           *qotd-config*
+
+*g:qotd_quoteoftheday*       (boolean default true) 
+
+  Disable qotd plugin by setting this to 0.
+                            
+*g:qotd#quotes#allquotes*   
+  A list of quotes. Add remove quotes from this list as required.
+  Note: Currently has around 300 quotes, make sure the list is not too big for
+  performance reasons.
+
+==============================================================================
+4. Integration                                             *qotd-integration*
+
+   You can integrate qotd with other plugins like lightline or airline or 
+   add to |'statusline'| directly.
+
+   For ex. to add to statusline
+   Set `set statusline=%{qotd#getquoteoftheday()}` in your vimrc.
+
+vim:tw=78:et:ft=help:norl:

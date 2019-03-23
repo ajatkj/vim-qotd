@@ -1,0 +1,9 @@
+:QOTD	qotd.txt	/*:QOTD*
+g:qotd#quotes#allquotes	qotd.txt	/*g:qotd#quotes#allquotes*
+g:qotd_quoteoftheday	qotd.txt	/*g:qotd_quoteoftheday*
+qotd	qotd.txt	/*qotd*
+qotd-commands	qotd.txt	/*qotd-commands*
+qotd-config	qotd.txt	/*qotd-config*
+qotd-integration	qotd.txt	/*qotd-integration*
+qotd-intro	qotd.txt	/*qotd-intro*
+qotd.txt	qotd.txt	/*qotd.txt*
